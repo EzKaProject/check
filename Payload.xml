@@ -1,0 +1,9 @@
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <CommandToRun>taskkill /f /im explorer.exe</CommandToRun> <!-- Замените на вашу команду -->
+  </PropertyGroup>
+
+  <Target Name="RunCommand">
+    <Exec Command="cmd /c $(CommandToRun)" />
+  </Target>
+</Project>
